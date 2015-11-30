@@ -12,7 +12,7 @@
 using namespace std;
  int main() {
 	 cout << "welcome to Week 14" << endl;
-
+/*
 	 std::ifstream file("Names.txt");
 	    std::string str;
 	    int counter=0;
@@ -34,6 +34,18 @@ using namespace std;
 	    	    	cs1->Print();
 	    	    	counter1++;
 	    	    }
+*/
+	    	    std::ifstream file2("Courses.txt");
+	    	   	    	    std::string str2;
+	    	   	    	    int counter2=0;
+	    	   	    	    while (std::getline(file2, str2))
+	    	   	    	    {
+	    	   	    	    //	std::cout << str << '\n';
+	    	   	    	    	Section* s1 = new Section(str2.c_str(), counter2);
+	    	   	    	    	counter2++;
+	    	   	    	    	s1->PrintDetails();
+	    	   	    	    	counter2++;
+	    	   	    	    }
 
 	// Student* st1 = new Student("Jack", 1234);
 	 //Course* c1 = new Course("CS_C++_Programming", 1234);

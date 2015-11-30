@@ -14,6 +14,14 @@ Section::Section (int SectionID)
 
 
 }
+Section::Section (string courseName, int SectionID)
+{
+		sectionID=SectionID;
+		course_Name=courseName;
+
+
+
+}
 
 
 bool Section::RegisterStudent(Student s)
@@ -72,13 +80,13 @@ void Section::PrintDetails()
 	cout<<"1] Room: "<<sectionRoom<<endl;
 
 	cout<<"2] Serial ID : "<<sectionID<<endl;
+	cout<<"3] Course Name : "<<course_Name<<endl;
 
-	cout<<"3] Section current size : "<<CurrentSize<<endl;
+	cout<<"4] Section current size : "<<CurrentSize<<endl;
 
 
 	cout<<endl;
 }
-
 
 
 
